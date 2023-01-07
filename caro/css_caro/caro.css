@@ -1,0 +1,538 @@
+/*底色*/
+body{
+    background-color: #181818;
+}
+
+/*Navbar底色＋高度*/
+nav{
+    background-color: #292929;
+    height: 140px;
+}
+
+/*LOGO按鈕*/
+.logo img{
+    float: left;
+    margin: 48px 35px 30px 60px;
+}
+
+/*搜尋按鈕*/
+.src img{
+    float: left;
+    margin: 36px 0px;
+}
+
+/*其他按鈕靠右對齊＋間距*/
+.btm{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    float: inline-end;
+    margin:0px 40px;
+}
+
+/*其他按鈕位置*/
+.btm img{
+    margin: 36px 15px;
+}
+
+/*文章區背景置中對齊*/
+.acbg{
+    background-color: #292929;
+    width: 1380px;
+    height: 1814px;
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+    position: relative;
+}
+
+/*四角遮罩位置綁定*/
+.ag img{
+    position: absolute;
+}
+
+/*左上角*/
+.aglt{
+    left: 0;
+    top: 0;
+}
+
+/*右上角*/
+.agrt{
+    right: 0;
+    top: 0;
+}
+
+/*左下角*/
+.aglb{
+    left: 0;
+    bottom: 0;
+}
+
+/*右下角*/
+.agrb{
+    right: 0;
+    bottom: 0;
+}
+
+.ssbill,.ssbuzz{
+    display: none;
+}
+
+/*看板靠左對齊＋綁定文章區*/
+.billbroad{
+    background-color: #4B4B4B;
+    width: 48%;
+    height: 113px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 50px 3.8%;
+}
+
+/*看板＋作者文字綁定*/
+.fall,.buzz{
+    position: absolute;
+    left: 140px;
+    top: 26px;
+}
+
+/*作者靠右對齊＋綁定文章區*/
+.buzzlond{
+    background-color: #4B4B4B;
+    width: 38%;
+    height: 113px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 50px 3.8%;
+}
+
+/*文字區置中對齊＋綁定文章區*/
+.text{
+    background-color: #4B4B4B;
+    width: 92.5%;
+    height: 650px;
+    position: absolute;
+    top: 210px;                        
+    left: 0;        
+    right: 0;
+    margin: auto;
+}
+
+/*文字區字元樣式*/
+.ag p{
+    font-family: 'Half Bold Pixel-7','GenYoGothic TW';
+    color: #FFFFFF;
+    font-weight: 600;
+    margin: 80px;
+    line-height: 60px;
+}
+
+/*標題大小*/
+.title{
+    font-size: 40px;
+}
+
+/*瀏覽次數文字大小＋綁定內文區置右*/
+.view{
+    font-size: 22px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*發文日期文字大小＋綁定內文區*/
+.day{
+    font-size: 24px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+/*內文大小＋綁定內文區*/
+.att1,.att2,.att3,.att4{
+    font-size: 26px;
+    position: absolute;
+    left: 0;
+}
+
+/*內文位置微調＋行距*/
+.att1{
+    top: 140px;
+}
+
+.att2{
+    top: 200px;
+}
+
+.att3{
+    top: 260px;
+}
+
+.att4{
+    top: 320px;
+}
+
+/*Hashtag按鈕綁定內文區*/
+.hs1,.hs2,.hs3,.lv1{
+    position: absolute;
+}
+
+/* #暈船按鈕 */
+.hs1{
+    top: 500px;
+    left: 80px;
+}
+
+/* #感情按鈕 */
+.hs2{
+    top: 500px;
+    left: 200px;
+}
+
+/* #救救我按鈕 */
+.hs3{
+    top: 500px;
+    left: 320px;
+}
+
+/* #愛心按鈕＋置右 */
+.lv1{
+    top: 500px;
+    right: 80px;
+}
+
+/*回文區綁定文章區*/
+.cmm1,.cmm2,.cmm3{
+    position: absolute;
+}
+
+.xmm1,.xmm2,.xmm3{
+    display: none;
+}
+
+/*markelf回文*/
+.cmm1{
+    top: 930px;
+    left: 3.6%;
+}
+
+/*作者回文＋置右*/
+.cmm2{
+    top: 1070px;
+    right: 3.6%;
+}
+
+/*milyelf回文*/
+.cmm3{
+    top: 1220px;
+    left: 3.6%;
+}
+
+/*留言區置中＋綁定文章區*/
+.dis{
+    background-color: #4B4B4B;
+    width: 92.5%;
+    height: 90px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1680px;
+    margin: auto;
+}
+
+/*留言區字元樣式＋置左*/
+.dis p{
+    position: absolute;
+    font-family: 'Half Bold Pixel-7','GenYoGothic TW';
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 26px;
+    top: 35px;
+    left: 45px;
+}
+
+/*留言區愛心按鈕＋置右*/
+.love{
+    position: absolute;
+    top: 34px;
+    right: 45px;
+}
+
+@media (max-width: 1460px) {
+
+/*底色*/
+body{
+    background-color: #181818;
+}
+
+/*Navbar底色＋高度*/
+nav{
+    background-color: #292929;
+    height: 93px;
+}
+
+/*LOGO按鈕*/
+.logo img{
+    float: none;
+    width: 65px;
+    margin: 33px 0px 33px 40px;
+}
+
+/*搜尋按鈕*/
+.src img{
+    display: none;
+}
+
+/*其他按鈕靠右對齊＋間距*/
+.btm{
+    display: none;
+}
+
+/*文章區背景置中對齊*/
+.acbg{
+    background-color: #292929;
+    width: 528px;
+    height: 1674px;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 30px auto;
+    position: relative;
+}
+
+/*四角遮罩位置綁定*/
+.ag img{
+    position: absolute;
+}
+
+/*左上角*/
+.aglt{
+    width: 10px;
+    left: 0;
+    top: 0;
+}
+
+/*右上角*/
+.agrt{
+    width: 10px;
+    right: 0;
+    top: 0;
+}
+
+/*左下角*/
+.aglb{
+    width: 10px;
+    left: 0;
+    bottom: 0;
+}
+
+/*右下角*/
+.agrb{
+    width: 10px;
+    right: 0;
+    bottom: 0;
+}
+
+.billbroad,.buzzlond{
+    display: none;
+}
+
+/*看板靠左對齊＋綁定文章區*/
+.ssbill{
+    background-color: #4B4B4B;
+    width: 92.5%;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 24px auto;
+}
+
+/*看板＋作者文字綁定*/
+.xxfall,.xxbuzz{
+    position: absolute;
+    left: 125px;
+    top: 25px;
+}
+
+/*作者靠右對齊＋綁定文章區*/
+.ssbuzz{
+    background-color: #4B4B4B;
+    width: 92.5%;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 144px auto;
+}
+
+/*文字區置中對齊＋綁定文章區*/
+.text{
+    background-color: #4B4B4B;
+    width: 92.5%;
+    height: 650px;
+    position: absolute;
+    top: 265px;                        
+    left: 0;        
+    right: 0;
+    margin: auto;
+}
+
+/*文字區字元樣式*/
+.ag p{
+    font-family: 'Half Bold Pixel-7','GenYoGothic TW';
+    color: #FFFFFF;
+    font-weight: 600;
+    margin: 40px;
+    line-height: 40px;
+}
+
+/*標題大小*/
+.title{
+    font-size: 24px;
+}
+
+/*瀏覽次數文字大小＋綁定內文區置右*/
+.view{
+    font-size: 18px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+
+/*發文日期文字大小＋綁定內文區*/
+.day{
+    font-size: 18px;
+    position: absolute;
+    top: 42px;
+    left: 0;
+}
+
+/*內文大小＋綁定內文區*/
+.att1,.att2,.att3,.att4{
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+}
+
+/*內文位置微調＋行距*/
+.att1{
+    top: 170px;
+}
+
+.att2{
+    top: 210px;
+}
+
+.att3{
+    top: 290px;
+}
+
+.att4{
+    top: 370px;
+}
+
+/*Hashtag按鈕綁定內文區*/
+.hs1,.hs2,.hs3,.lv1{
+    position: absolute;
+    height: 40px;
+}
+/* #暈船按鈕 */
+.hs1{
+    top: 578px;
+    left: 38px;
+}
+
+/* #感情按鈕 */
+.hs2{
+    top: 578px;
+    left: 108px;
+}
+
+/* #救救我按鈕 */
+.hs3{
+    top: 578px;
+    left: 178px;
+}
+
+/* #愛心按鈕＋置右 */
+.lv1{
+    top: 578px;
+    right: 38px;
+}
+
+/*回文區綁定文章區*/
+.cmm1,.cmm2,.cmm3{
+    display: none;
+}
+
+.xmm1,.xmm2,.xmm3{
+    display: flex;
+    position: absolute;
+    width: 400px;
+}
+
+/*markelf回文*/
+.xmm1{
+    top: 980px;
+    left: 3.6%;
+}
+
+/*作者回文＋置右*/
+.xmm2{
+    top: 1150px;
+    right: 3.6%;
+}
+
+/*milyelf回文*/
+.xmm3{
+    top: 1320px;
+    left: 3.6%;
+}
+
+/*留言區置中＋綁定文章區*/
+.dis{
+    background-color: #4B4B4B;
+    width: 92.5%;
+    height: 58px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1598px;
+    margin: auto;
+}
+
+/*留言區字元樣式＋置左*/
+.dis p{
+    position: absolute;
+    font-family: 'Half Bold Pixel-7','GenYoGothic TW';
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 18px;
+    top: 23px;
+    left: 28px;
+}
+
+/*留言區愛心按鈕＋置右*/
+.love{
+    position: absolute;
+    width: 19px;
+    top: 22px;
+    right: 28px;
+}
+
+  }
