@@ -1,5 +1,6 @@
 body {
     background-color: #181818;
+    font-family:monospace;
   }
   /* nav */
   .nav {
@@ -11,6 +12,7 @@ body {
     left: 0%;
     z-index: 9999;
     position: relative;
+    font-family: monospace;
   }
   
   .nav li {
@@ -48,6 +50,7 @@ body {
     top: 0px;
     left: -17px;
   }
+  .nav input::-webkit-input-placeholder{font-family: monospace;font-weight: 700;font-size: 35px;z-index: 15;}
   .serch .click {
     position: relative;
     background: #ffe500;
@@ -411,6 +414,10 @@ body {
   z-index: 5;
   display: none;
 }
+.hd-board p{
+  font-size: 30px;
+  margin: 20px 0 0 30px;
+}
 .hd-board div{
   position: relative;
   display: inline-block;
@@ -443,6 +450,9 @@ body {
   width: 100%;
   z-index: 15;
 }
+.hd-board .headd:active, .maxhead:active{
+  top: 3px;
+}
 .hd-board .bodyy{
   width: 39%;
   position: absolute;
@@ -466,7 +476,7 @@ body {
 /*改色-cls1=膚,cls2=髮,cls3=角*/
 .stick-3 .cls-1, .stick-4 .cls-1{fill: #A2F9A8;}  .stick-3 .cls-2, .stick-4 .cls-2{fill: #5252FF;}
 .stick-5 .cls-1, .stick-6 .cls-1{fill: #FC88D8;}  .stick-5 .cls-2, .stick-6 .cls-2{fill: #A2F9A8;}
-
+.stick-8 a{position: absolute;left: calc(50% - 20px);top: calc(50% - 20px);}
 .hd-board.hd-display{
   display: block;
 }
@@ -541,6 +551,12 @@ body {
 .medal .mid .r:hover{background-color: #47DEFF;color: #ffffff;}.medal .mid .r:hover::before{background-color: #47DEFF;}
 .medal .bottom .l:hover{background-color: #FB29FF;color: #ffffff;}.medal .bottom .l:hover::before{background-color: #FB29FF;}
 .medal .bottom .r:hover{background-color: #FB29FF;color: #ffffff;}.medal .bottom .r:hover::before{background-color: #FB29FF;}
+  /*右邊active*/
+  .medal .top .l:active,.medal .top .r:active,.medal .mid .l:active,.medal .mid .r:active,.medal .bottom .l:active,.medal .bottom .r:active{
+    filter: brightness(70%);
+  }
+
+
   /*左邊*/
   .post-left{
     position: relative;
@@ -564,14 +580,17 @@ body {
   h1{
     font-size: 40px;
     margin-top: 10%;
+    font-weight: 900;
   }
   h2{
     font-size: 32px;
     margin: 5% 0%;
+    font-weight: 700;
   }
   h3{
     padding: 16px 2%;
     font-size: 30px;
+    font-weight: 700;
   }
   .left-tag{
     margin: 5% 0%;
@@ -580,8 +599,238 @@ body {
     display: inline-block;
     margin-bottom: 5%;
   }
+  .tag1:hover{content: url(../img/b5/article_hover.png);}
+  .tag2:hover{content: url(../img/b5/history_hover.png);}
+  .tag3:hover{content: url(../img/b5/collect_hover.png);}
+  .tag4:hover{content: url(../img/b5/setting_hover.png);}
+  .tag5:hover{content: url(../img/b5/help_hover.png);}
+
+  .tag1:active{content: url(../img/b5/article_hover.png);filter: brightness(50%);}
+  .tag2:active{content: url(../img/b5/history_hover.png);filter: brightness(50%);}
+  .tag3:active{content: url(../img/b5/collect_hover.png);filter: brightness(50%);}
+  .tag4:active{content: url(../img/b5/setting_hover.png);filter: brightness(50%);}
+  .tag5:active{content: url(../img/b5/help_hover.png);filter: brightness(50%);}
+  .tag1:active,.tag2:active,.tag3:active,.tag4:active,.tag5:active{margin-left: 20px;}
   .tag-5{
     display: none;
+  }
+
+
+  /*動畫*/
+  .stick-1:hover .headd {
+    animation-name: head;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-2:hover .headd {
+    animation-name: head;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-3:hover .headd {
+    animation-name: head;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-4:hover .headd {
+    animation-name: head;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-5:hover .headd {
+    animation-name: head;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-6:hover .headd {
+    animation-name: head;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-7:hover .maxhead {
+    animation-name: head;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  @keyframes head {
+    0% {
+      margin-left: 0;
+    }
+    25% {
+      margin-left: 5px;
+    }
+    50% {
+      margin-left: 0;
+    }
+    75% {
+      margin-left: 5px;
+    }
+    100% {
+      margin-left: 0px;
+    }
+  }
+
+  .stick-1:hover .bodyy {animation-name: body;}
+  .stick-2:hover .bodyy {animation-name: body;}
+  .stick-3:hover .bodyy {animation-name: body;}
+  .stick-4:hover .bodyy {animation-name: body;}
+  .stick-5:hover .bodyy {animation-name: body;}
+  .stick-6:hover .bodyy {animation-name: body;}
+  .stick-6:hover .maxbody {animation-name: body;}
+
+  @keyframes cls1 {
+    25% {
+      fill: #3eed85;
+    }
+    50% {
+      fill: #fff;
+    }
+    75% {
+      fill: #ff50c1;
+    }
+    100% {
+      fill: #fff;
+    }
+  }
+  .stick-1:hover.cls-2 {
+    animation: cls2;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-2:hover.cls-2 {
+    animation: cls2;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-3:hover.cls-2 {
+    animation: cls2;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-4:hover.cls-2 {
+    animation: cls2;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-5:hover.cls-2 {
+    animation: cls2;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-6:hover.cls-2 {
+    animation: cls2;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-7:hover.cls-2 {
+    animation: cls2;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  @keyframes cls2 {
+    25% {
+      fill: #fff;
+    }
+    50% {
+      fill: #ff50c1;
+    }
+    75% {
+      fill: #3eed85;
+    }
+    100% {
+      fill: #ff50c1;
+    }
+  }
+  .stick-1:hover .cls-3 {
+    animation: cls3;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-2:hover .cls-3 {
+    animation: cls3;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-3:hover .cls-3 {
+    animation: cls3;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-4:hover .cls-3 {
+    animation: cls3;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-5:hover .cls-3 {
+    animation: cls3;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-6:hover .cls-3 {
+    animation: cls3;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  .stick-7:hover .cls-3 {
+    animation: cls3;
+    animation-duration: 1.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  @keyframes cls3 {
+    25% {
+      fill: #ff50c1;
+    }
+    50% {
+      fill: #3eed85;
+    }
+    75% {
+      fill: #fff;
+    }
+    100% {
+      fill: #3eed85;
+    }
   }
 
 
@@ -601,6 +850,7 @@ body {
     .menu-list li a:active {
       color: #0579e3;
     }
+    .menu-list::-webkit-input-placeholder{font-family: monospace;font-weight: 900;}
 
     .container {
       margin: 75px auto;
@@ -658,6 +908,7 @@ body {
       display: inline-block;
       margin-left: 25px;
       font-size: 25px;
+      
     }
     h2{
       position: absolute;
@@ -671,12 +922,26 @@ body {
       display: block;
       margin: 15px 0;
     }
+    .tag1:active{content: url(../img/b5p/article_hover.png);}
+    .tag2:active{content: url(../img/b5p/history_hover.png);}
+    .tag3:active{content: url(../img/b5p/collect_hover.png);}
+    .tag4:active{content: url(../img/b5p/setting_hover.png);}
+    .tag5:active{content: url(../img/b5p/help_hover.png);}
 
     /*right*/
     .right-group{margin-left: 0;width: 100%;}
     .exp{height: 55px;}
     .exp p{top: calc(50% - 10px);}
     .exp img{top: calc(50% - 20px);left: 20%;}
+
+    .black-pixel{padding: 10px 2%;}
+
+    /*tag-b5p*/
+    .tag1:hover{content: url(../img/b5p/article_hover.png);}
+    .tag2:hover{content: url(../img/b5p/history_hover.png);}
+    .tag3:hover{content: url(../img/b5p/collect_hover.png);}
+    .tag4:hover{content: url(../img/b5p/setting_hover.png);}
+    .tag5:hover{content: url(../img/b5p/help_hover.png);}
 
     /*勳章*/
     .medal .top div,.medal .mid div,.medal .bottom div{

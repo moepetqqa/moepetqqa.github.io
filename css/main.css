@@ -1,6 +1,7 @@
 body {
   overflow: hidden;
   height: 100%;
+  font-family: monospace;
   /* margin: 150px 15%;應該是寫在login控制位置 改寫在29行*/
 }
 .ptt-nav {
@@ -172,6 +173,8 @@ input{/*帳號密碼框*/
   border-width: 20px;
   border-image: url(../img/pixel_side.png) 20 stretch;/*邊框*/
 }
+
+.input-area-1 .input-login:active{filter: brightness(50%);top: 5px;}
 .input-area-1 div a {
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -248,6 +251,8 @@ canvas{/*背景動畫*/
 .uw-p{
   display: none;
 }
+.uw img:hover{filter: brightness(130%);}
+.uw img:active{filter: brightness(50%);}
 @media (max-width:800px) {
   .login {
     position: relative;
@@ -277,6 +282,10 @@ canvas{/*背景動畫*/
   .user .ub p:hover{
     background-image: url(../img/user_window_p.png);
   }
+  .user .ub p:active{
+    background-image: url(../img/user_window_p.png);
+    filter: brightness(130%);
+  }
   .visitor{
     background-image: url(../img/visitor\ board_1_p.png);
     display: block;
@@ -287,6 +296,14 @@ canvas{/*背景動畫*/
   }
   .visitor .ub p{
     background-image: url(../img/visitor_window_p.png);
+  }
+  .visitor .ub p:hover{
+    background-image: url(../img/visitor_window_p.png);
+    
+  }
+  .visitor .ub p:active{
+    background-image: url(../img/visitor_window_p.png);
+    filter: brightness(130%);
   }
   /*點擊後*/
   /* .user.expend .visitor {
@@ -379,6 +396,9 @@ canvas{/*背景動畫*/
 .uw-p button:hover{background-color: #2b48ff;}
 .uw-p button:hover::before{background-color:#2b48ff ;}
 .uw-p button:hover::after{background-color: #2b48ff;}
+.uw-p button:active{filter: brightness(50%);}
+
+
 .uw-p p{
   font-size: 12px;
 }
@@ -387,6 +407,7 @@ canvas{/*背景動畫*/
   margin: 0 2%;
 }
 .uw-p img:hover{filter: brightness(130%);}
+.uw-p img:active{filter: brightness(50%);}
 
 
 

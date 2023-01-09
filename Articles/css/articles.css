@@ -1,15 +1,8 @@
 body {
   background-color: #181818;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  width: 100vw;
-}
-
-@font-face {
-  font-family: "GenYoGothic,Half Bold Pixel-7";
-  src: url(../font/GenYoGothic-H.ttc);
-  src: url(../font/HalfBoldPixel7-2rw3.ttf);
+  font-family: monospace;
 }
 
 .nav {
@@ -19,7 +12,8 @@ body {
   position: sticky;
   top: 0%;
   left: 0%;
-  z-index: 8;
+  z-index: 2;
+  position: relative;
 }
 
 .nav li {
@@ -38,16 +32,12 @@ body {
   background-size: contain;
   margin-top: 13px;
 }
+
 .logo a:hover {
   width: 107px;
-  height: 40px;
+  height: 56px;
   background-image: url(../img/header/hover_ptt.png);
   background-repeat: no-repeat;
-  transition: 0.2s ease;
-  -webkit-transition: 0.2s ease;
-  -moz-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
-  margin-top: 13px;
 }
 
 .logo a:active {
@@ -99,12 +89,12 @@ body {
   transition: 2s;
 }
 input {
-  font-family: "Half Bold Pixel-7";
+  font-family: monospace;
   font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
+  font-weight: 700;
+  font-size: 40px;
   position: absolute;
-  top: 23px;
+  top: 5px;
   left: 32px;
   vertical-align: middle;
   width: 70%;
@@ -131,10 +121,6 @@ input {
 }
 .account a:hover {
   background-image: url(../img/header/hover_account.png);
-  transition: 0.3s ease;
-  -webkit-transition: 0.2s ease;
-  -moz-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
 }
 .account a:active {
   background-position-y: 3px;
@@ -150,10 +136,6 @@ input {
 }
 .post a:hover {
   background-image: url(../img/header/hover_post.png);
-  transition: 0.2s ease;
-  -webkit-transition: 0.2s ease;
-  -moz-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
 }
 .post a:active {
   background-position-y: 3px;
@@ -169,13 +151,13 @@ input {
 }
 .notice a:hover {
   background-image: url(../img/header/hover_notice.png);
-  transition: 0.2s ease;
-  -webkit-transition: 0.2s ease;
-  -moz-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
 }
 .notice a:active {
   background-position-y: 3px;
+}
+
+.phone-buger {
+  display: none;
 }
 
 .noteoutl.noteoutl-display {
@@ -410,6 +392,10 @@ input {
   height: 484px;
 }
 
+.carousel-indicators {
+  z-index: 1;
+}
+
 .carousel-indicators [data-bs-target] {
   width: 56px;
   height: 8px;
@@ -473,14 +459,11 @@ input {
 }
 
 .phopb {
-  opacity: 0;
-}
-
-.phopb {
   width: 110px;
   height: 50px;
   left: 0;
   position: absolute;
+  opacity: 0;
 }
 
 .drapdown {
@@ -605,6 +588,8 @@ element.style {
   position: absolute;
   bottom: 0;
   opacity: 0;
+  opacity: 0;
+  z-index: 1;
 }
 
 .content2 {
@@ -666,23 +651,47 @@ element.style {
 .img1 {
   width: 18.98%;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
 }
 
-.phoimg {
+.phoimg1 {
+  opacity: 0;
+}
+
+.phoimg2 {
+  opacity: 0;
+}
+
+.phoimg3 {
+  opacity: 0;
+}
+
+.phoimg4 {
+  opacity: 0;
+}
+
+.phoimg5 {
+  opacity: 0;
+}
+
+.phoimg6 {
+  opacity: 0;
+}
+
+.phoimg7 {
   opacity: 0;
 }
 
 .word1 {
-  width: 81%;
+  width: 80.9%;
   height: 113px;
   position: absolute;
   left: 217px;
   padding: 30px 3.7%;
 }
 
-.word1:hover {
-  background-color: #666666;
+.articles1:hover {
+  background-color: #8f8f8f;
 }
 
 .word-left,
@@ -697,6 +706,7 @@ element.style {
 
 .b {
   font-size: 26px;
+  font-weight: 900;
 }
 
 .s1 {
@@ -706,6 +716,7 @@ element.style {
 
 .s {
   font-size: 22px;
+  font-weight: 700;
 }
 
 .word-cen {
@@ -726,8 +737,7 @@ element.style {
 .word1 p {
   text-decoration: none;
   color: #e8e8e8;
-  font-family: "Half Bold Pixel-7", "GenYoGothic TW";
-  font-weight: 600;
+  font-family: monospace;
   line-height: 18px;
 }
 
@@ -746,11 +756,6 @@ element.style {
 
 .a {
   width: 100%;
-}
-
-.phoag {
-  opacity: 0;
-  z-index: 8;
 }
 
 /*左上角*/
@@ -809,6 +814,10 @@ element.style {
   bottom: 0;
 }
 
+.articles2:hover {
+  background-color: #8f8f8f;
+}
+
 .articles3 {
   background-color: #4b4b4b;
   width: 100%;
@@ -852,6 +861,10 @@ element.style {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.articles3:hover {
+  background-color: #8f8f8f;
 }
 
 .articles4 {
@@ -899,6 +912,10 @@ element.style {
   bottom: 0;
 }
 
+.articles4:hover {
+  background-color: #8f8f8f;
+}
+
 .articles5 {
   background-color: #4b4b4b;
   width: 100%;
@@ -942,6 +959,10 @@ element.style {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.articles5:hover {
+  background-color: #8f8f8f;
 }
 
 .articles6 {
@@ -989,16 +1010,16 @@ element.style {
   bottom: 0;
 }
 
+.articles6:hover {
+  background-color: #8f8f8f;
+}
+
 .articles7 {
   background-color: #4b4b4b;
   width: 100%;
   height: 113px;
   display: flex;
   margin-top: 34px;
-}
-
-/*四角遮罩位置綁定*/
-.articles7 {
   position: relative;
 }
 
@@ -1032,6 +1053,10 @@ element.style {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.articles7:hover {
+  background-color: #8f8f8f;
 }
 
 .Pag {
@@ -1082,6 +1107,11 @@ element.style {
   opacity: 0;
 }
 
+.phopag2 {
+  opacity: 0;
+  width: 0;
+}
+
 .pagination {
   width: 284px;
   height: 51px;
@@ -1114,7 +1144,7 @@ element.style {
   --bs-body-font-weight: bolder;
   --bs-link-color: #aaaaaa;
   --bs-link-hover-color: #ffffff;
-  --bs-body-font-family: Half Bold Pixel-7;
+  --bs-body-font-family: monospace;
 }
 
 .page-item a {
@@ -1225,6 +1255,11 @@ element.style {
   opacity: 0;
 }
 
+.phopag3 {
+  opacity: 0;
+  width: 0;
+}
+
 .pag4 {
   position: relative;
   margin-left: 553px;
@@ -1243,6 +1278,11 @@ element.style {
   opacity: 0;
 }
 
+.phopag4 {
+  opacity: 0;
+  width: 0;
+}
+
 /* 貓咪gif */
 .nyancat {
   width: 100%;
@@ -1256,6 +1296,189 @@ element.style {
 
 /* 手機版 */
 @media (max-width: 1460px) {
+  .nav-right {
+    display: none;
+  }
+  .logo a {
+    width: 73px;
+    height: 37px;
+    background-image: url(../img/phone/logo.png);
+    margin-right: 28px;
+    margin-left: 238px;
+    background-size: contain;
+  }
+  .logo a:hover {
+    background-image: url(../img/phone/logo.png);
+    background-repeat: no-repeat;
+    width: 73px;
+    height: 37px;
+  }
+
+  .logo a:active {
+    background-position-y: 3px;
+  }
+
+  .serch a {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    background-image: url(../img/phone/serch.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: -30px;
+  }
+  .serch .click {
+    height: 45px;
+    left: -310px;
+  }
+  .click::before {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: -10px;
+    right: -10px;
+  }
+
+  .click::after {
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: -6px;
+    right: -6px;
+  }
+  .click:hover {
+    width: 0px;
+  }
+  .click:hover {
+    width: 140px;
+    transition: 1s;
+  }
+  input {
+    font-size: 18px;
+    position: absolute;
+    top: 13px;
+    left: 5px;
+    width: 70%;
+  }
+
+  .phone-buger {
+    display: block;
+  }
+  .line {
+    width: 45px;
+    height: 45px;
+    background-image: url(../img/phone/buger.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    padding: 16px;
+    position: absolute;
+    right: 13px;
+    top: 12px;
+    z-index: 2;
+  }
+  .line:active {
+    background-position-y: 3px;
+  }
+  .line .menu,
+  .line .menu::before,
+  .line .menu::after {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 2.5px;
+    position: absolute;
+    transition: ease 0.3s, top ease 0.3s 0.3s, transform ease 0.3s;
+    width: 17px;
+  }
+  .line .menu {
+    left: 15px;
+    top: 23px;
+  }
+
+  .line .menu::before {
+    top: -6px;
+  }
+
+  .line .menu::after {
+    top: 6px;
+  }
+
+  #menu:checked + .line .menu {
+    background: transparent;
+  }
+
+  #menu:checked + .line .menu::before {
+    transform: rotate(45deg);
+  }
+
+  #menu:checked + .line .menu::after {
+    transform: rotate(-45deg);
+  }
+
+  #menu:checked + .line .menu::before,
+  #menu:checked + .line .menu::after {
+    top: 0;
+    transition: top ease 0.3s, transform ease 0.3s 0.3s;
+  }
+
+  #menu:checked ~ .menu-list {
+    width: 576px;
+    right: 0px;
+  }
+
+  .menu-list {
+    width: 0px;
+    height: 100vh;
+    background: #4b4b4b;
+    padding-top: 60px;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 68px;
+    transition: all 0.6s;
+  }
+  .menu-list ul {
+    list-style: none;
+    margin-left: 70px;
+    padding: 0;
+  }
+  .menu-list img {
+    margin-right: 10px;
+  }
+  .menu-list img li {
+    vertical-align: middle;
+    display: inline-block;
+    width: 40px;
+  }
+  .menu-list li {
+    margin-bottom: 20px;
+  }
+  .menu-list li a {
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    color: #e8e8e8;
+  }
+
+  .menu-list li a:active {
+    color: #0579e3;
+  }
+
+  .menu-list ul > li {
+    display: block;
+    width: 576px;
+  }
+
+  input#menu {
+    display: none;
+  }
+
   .content {
     width: 91.66%;
     height: 1256px;
@@ -1461,7 +1684,43 @@ element.style {
     margin-top: 16px;
   }
 
-  .phoimg {
+  .phoimg1 {
+    opacity: 100;
+    position: absolute;
+    top: 0;
+  }
+
+  .phoimg2 {
+    opacity: 100;
+    position: absolute;
+    top: 0;
+  }
+
+  .phoimg3 {
+    opacity: 100;
+    position: absolute;
+    top: 0;
+  }
+
+  .phoimg4 {
+    opacity: 100;
+    position: absolute;
+    top: 0;
+  }
+
+  .phoimg5 {
+    opacity: 100;
+    position: absolute;
+    top: 0;
+  }
+
+  .phoimg6 {
+    opacity: 100;
+    position: absolute;
+    top: 0;
+  }
+
+  .phoimg7 {
     opacity: 100;
     position: absolute;
     top: 0;
@@ -1489,7 +1748,7 @@ element.style {
   }
 
   .word1 {
-    width: 81%;
+    width: 78.1%;
     height: 100px;
     position: absolute;
     left: 90px;
@@ -1510,7 +1769,7 @@ element.style {
   }
 
   .word-left {
-    width: 60%;
+    width: 67%;
   }
 
   .word-cen {
@@ -1519,7 +1778,7 @@ element.style {
   }
 
   .word-right {
-    width: 21.5%;
+    width: 28.5%;
     right: 19px;
   }
 
@@ -1528,7 +1787,7 @@ element.style {
   }
 
   .Pag {
-    width: 482px;
+    width: 484px;
     height: 41.81px;
     margin-left: auto;
     margin-right: auto;
@@ -1538,7 +1797,7 @@ element.style {
   .pagination {
     width: 218px;
     height: 40px;
-    margin-left: 148px;
+    margin-left: 133px;
     --bs-pagination-font-size: 20px;
     --bs-pagination-padding-x: 12px;
     --bs-pagination-padding-y: 13px;
@@ -1572,17 +1831,60 @@ element.style {
     width: 0;
   }
 
+  .nyancat {
+    width: 100%;
+    background-image: url(../img/nyancat.gif);
+    margin-top: -160px;
+    height: 170px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
   .phopag1 {
     opacity: 100;
     width: 55px;
   }
 
-  .nyancat {
-    width: 100%;
-    background-image: url(../img/nyancat.gif);
-    margin-top: -180px;
-    height: 170px;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+  .phopag1:active {
+    content: url(../img/acphopag1.png);
+  }
+
+  .pag2 {
+    margin-left: 74px;
+  }
+
+  .phopag2 {
+    opacity: 100;
+    width: 40px;
+  }
+
+  .phopag2:active {
+    content: url(../img/acphopag2.png);
+  }
+
+  .pag3 {
+    margin-left: 370px;
+  }
+
+  .phopag3 {
+    opacity: 100;
+    width: 40px;
+  }
+
+  .phopag3:active {
+    content: url(../img/acphopag3.png);
+  }
+
+  .pag4 {
+    margin-left: 429px;
+  }
+
+  .phopag4 {
+    opacity: 100;
+    width: 55px;
+  }
+
+  .phopag4:active {
+    content: url(../img/acphopag4.png);
   }
 }

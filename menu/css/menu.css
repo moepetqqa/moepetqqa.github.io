@@ -1,5 +1,6 @@
 body {
   background-color: #181818;
+  font-family: GenYoGothic, HalfBoldPixel7;
 }
 /* nav */
 .nav {
@@ -27,7 +28,9 @@ body {
   background-repeat: no-repeat;
   margin-right: 28px;
   background-size: contain;
+  margin-top: 13px;
 }
+
 .logo a:hover {
   width: 107px;
   height: 56px;
@@ -320,6 +323,7 @@ input {
   position: relative;
   margin-bottom: 25px;
 }
+
 .hotboard a p {
   font-family: "GenYoGothic TW";
   font-weight: 800;
@@ -334,7 +338,7 @@ input {
   color: #292929;
   display: inline-block;
   width: 173px;
-  height: 80px;
+
   background-image: url(../img/hover_hot.png);
   background-repeat: no-repeat;
 }
@@ -541,12 +545,10 @@ input {
     width: 339px;
     height: 59px;
     overflow-x: scroll;
-    background-color: transparent;
-    border-color: transparent;
-    border-style: none;
   }
+
   .phone-top::-webkit-scrollbar {
-    width: 0;
+    display: none;
   }
   .phonetopframe img {
     display: block;
@@ -668,8 +670,8 @@ input {
     display: block;
   }
   .line {
-    width: 24px;
-    height: 24px;
+    width: 45px;
+    height: 45px;
     background-image: url(../img/phone/buger.png);
     background-repeat: no-repeat;
     cursor: pointer;
@@ -798,4 +800,19 @@ input {
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
+}
+@font-face {
+  font-family: GenYoGothic;
+  src: url(../font/GenYoGothic-B.ttf);
+  src: url(../font/GenYoGothic-B.ttf) format("truetype"),
+    url(../font/GenYoGothic-B.eot) format("embedded-opentype");
+  src: url(../font/GenYoGothic-H.ttf);
+  src: url(../font/GenYoGothic-H.ttf) format("truetype"),
+    url(../font/GenYoGothic-H.eot) format("embedded-opentype");
+}
+@font-face {
+  font-family: HalfBoldPixel7;
+  src: url(../font/HalfBoldPixel7-2rw3.ttf);
+  src: url(../font/HalfBoldPixel7-2rw3.ttf) format("truetype"),
+    url(../font/HalfBoldPixel7-2rw3.eot) format("embedded-opentype");
 }
