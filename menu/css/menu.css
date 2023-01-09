@@ -547,7 +547,7 @@ input {
     left: 138px;
     display: inline-block;
     position: relative;
-    width: 339px;
+    width: 70%;
     height: 59px;
     overflow-x: scroll;
   }
@@ -559,11 +559,12 @@ input {
     display: block;
     position: absolute;
     top: 25px;
-    left: 145px;
+    left: 139px;
+    width: 70%;
   }
   .phone-top ul {
     position: absolute;
-    top: 10px;
+    top: 9px;
     padding-left: 10px;
     width: 1383px;
   }
@@ -583,7 +584,7 @@ input {
 
   .background {
     margin-left: 39px;
-    width: 84%;
+    width: 106%;
     height: 937px;
     padding: 25px 2%;
   }
