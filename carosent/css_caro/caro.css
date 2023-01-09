@@ -18,7 +18,7 @@ body {
 .nav li {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 5.7%;
+  margin-right: 0.7%;
 }
 
 .logo a {
@@ -526,10 +526,6 @@ input {
 
   .logo a:active {
     background-position-y: 3px;
-  }
-
-  .nav {
-    width: 123%;
   }
 
   .serch a {

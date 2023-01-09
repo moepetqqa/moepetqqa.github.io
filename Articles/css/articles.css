@@ -19,7 +19,7 @@ body {
 .nav li {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 5.7%;
+  margin-right: 0.7%;
 }
 
 .logo a {
@@ -1501,10 +1501,6 @@ element.style {
     padding: 24px 8px;
     position: relative;
     background: #292929;
-  }
-
-  .nav {
-    width: 123%;
   }
 
   .carousel {

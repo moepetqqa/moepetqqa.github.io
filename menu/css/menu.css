@@ -17,7 +17,7 @@ body {
 .nav li {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 5.7%;
+  margin-right: 0.7%;
 }
 
 .logo a {
@@ -453,10 +453,6 @@ input {
     margin-bottom: 25px;
   }
 
-  .nav {
-    width: 123%;
-  }
-
   .hotboard a p {
     font-size: 20px;
     top: 16px;
@@ -539,7 +535,6 @@ input {
     position: absolute;
     top: 13px;
     left: 5px;
-    width: 70%;
   }
 
   .phone-top {
@@ -584,7 +579,6 @@ input {
 
   .background {
     margin-left: 39px;
-    width: 106%;
     height: 937px;
     padding: 25px 2%;
   }

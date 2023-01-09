@@ -18,7 +18,7 @@ body {
 .nav li {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 5.7%;
+  margin-right: 0.7%;
 }
 
 .logo a {
@@ -614,10 +614,6 @@ input {
     list-style: none;
     margin-left: 70px;
     padding: 0;
-  }
-
-  .nav {
-    width: 123%;
   }
 
   .menu-list img {
