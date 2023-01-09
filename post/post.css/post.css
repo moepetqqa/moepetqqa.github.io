@@ -1,359 +1,363 @@
 body {
-    background-color: #181818;
-    font-family:monospace;
+  background-color: #181818;
+  font-family: monospace;
+}
+/* nav */
+.nav {
+  background-color: #292929;
+  padding: 2% 3%;
+  margin: 0%;
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  z-index: 9999;
+  position: relative;
+  font-family: monospace;
+}
+
+.nav li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5.7%;
+}
+
+.logo a {
+  width: 107px;
+  height: 40px;
+  display: inline-block;
+  background-image: url(../img/header/ptt.png);
+  background-repeat: no-repeat;
+  margin-right: 28px;
+  background-size: contain;
+}
+.logo a:hover {
+  width: 107px;
+  height: 56px;
+  background-image: url(../img/header/hover_ptt.png);
+  background-repeat: no-repeat;
+}
+
+.logo a:active {
+  background-position-y: 3px;
+}
+
+.serch a {
+  width: 66px;
+  height: 66px;
+  display: inline-block;
+  background-image: url(../img/header/serchbutton.png);
+  position: absolute;
+  top: 0px;
+  left: -17px;
+}
+.nav input::-webkit-input-placeholder {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 35px;
+  z-index: 15;
+}
+.serch .click {
+  position: relative;
+  background: #ffe500;
+  width: 0px;
+  height: 66px;
+  z-index: 2;
+  transition: 0.7s;
+}
+.click::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 16px;
+  bottom: 16px;
+  left: -16px;
+  right: -16px;
+  background: #ffe500;
+  z-index: -1;
+}
+
+.click::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: -8px;
+  right: -8px;
+  background: #ffe500;
+  z-index: -1;
+}
+.click:hover {
+  width: 328px;
+  transition: 2s;
+}
+input {
+  font-family: "Half Bold Pixel-7";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  position: absolute;
+  top: 23px;
+  left: 32px;
+  vertical-align: middle;
+  width: 70%;
+  border: 0;
+  background-color: #ffe500;
+  outline: medium;
+}
+.nav-right {
+  position: absolute;
+  right: 3%;
+  top: calc(50% - 35px);
+}
+.nav-right div {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
+.account a {
+  width: 66px;
+  height: 66px;
+  display: inline-block;
+  background-image: url(../img/header/accountbutton.png);
+  background-repeat: no-repeat;
+}
+.account a:hover {
+  background-image: url(../img/header/hover_account.png);
+}
+.account a:active {
+  background-position-y: 3px;
+}
+
+.post a {
+  width: 66px;
+  height: 66px;
+  display: inline-block;
+  background-image: url(../img/header/postbutton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.post a:hover {
+  background-image: url(../img/header/hover_post.png);
+}
+.post a:active {
+  background-position-y: 3px;
+}
+
+.notice a {
+  width: 66px;
+  height: 66px;
+  display: inline-block;
+  background-image: url(../img/header/noticebutton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.notice a:hover {
+  background-image: url(../img/header/hover_notice.png);
+}
+.notice a:active {
+  background-position-y: 3px;
+}
+
+.phone-buger {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .nav-right {
+    display: none;
   }
-  /* nav */
-  .nav {
-    background-color: #292929;
-    padding: 2% 3%;
-    margin: 0%;
-    position: sticky;
-    top: 0%;
-    left: 0%;
-    z-index: 9999;
-    position: relative;
-    font-family: monospace;
-  }
-  
-  .nav li {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 0.7%;
-  }
-  
   .logo a {
-    width: 107px;
-    height: 40px;
-    display: inline-block;
-    background-image: url(../img/header/ptt.png);
-    background-repeat: no-repeat;
+    width: 73px;
+    height: 37px;
+    background-image: url(../img/phone/logo.png);
     margin-right: 28px;
+    margin-left: 238px;
     background-size: contain;
   }
   .logo a:hover {
-    width: 107px;
-    height: 56px;
-    background-image: url(../img/header/hover_ptt.png);
+    background-image: url(../img/phone/logo.png);
     background-repeat: no-repeat;
+    width: 73px;
+    height: 37px;
   }
-  
+
   .logo a:active {
     background-position-y: 3px;
   }
-  
+
   .serch a {
-    width: 66px;
-    height: 66px;
+    width: 45px;
+    height: 45px;
     display: inline-block;
-    background-image: url(../img/header/serchbutton.png);
+    background-image: url(../img/phone/serch.png);
+    background-repeat: no-repeat;
     position: absolute;
     top: 0px;
-    left: -17px;
+    left: -30px;
   }
-  .nav input::-webkit-input-placeholder{font-family: monospace;font-weight: 700;font-size: 35px;z-index: 15;}
   .serch .click {
-    position: relative;
-    background: #ffe500;
-    width: 0px;
-    height: 66px;
-    z-index: 2;
-    transition: 0.7s;
+    height: 45px;
+    left: -310px;
   }
   .click::before {
-    content: "";
-    display: block;
     position: absolute;
-    top: 16px;
-    bottom: 16px;
-    left: -16px;
-    right: -16px;
-    background: #ffe500;
-    z-index: -1;
-  }
-  
-  .click::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 8px;
-    bottom: 8px;
-    left: -8px;
-    right: -8px;
-    background: #ffe500;
-    z-index: -1;
-  }
-  .click:hover {
-    width: 328px;
-    transition: 2s;
-  }
-  input {
-    font-family: "Half Bold Pixel-7";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    position: absolute;
-    top: 23px;
-    left: 32px;
-    vertical-align: middle;
-    width: 70%;
-    border: 0;
-    background-color: #ffe500;
-    outline: medium;
-  }
-  .nav-right {
-    position: absolute;
-    right: 3%;
-    top: calc(50% - 35px);
-  }
-  .nav-right div {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 10px;
-  }
-  .account a {
-    width: 66px;
-    height: 66px;
-    display: inline-block;
-    background-image: url(../img/header/accountbutton.png);
-    background-repeat: no-repeat;
-  }
-  .account a:hover {
-    background-image: url(../img/header/hover_account.png);
-  }
-  .account a:active {
-    background-position-y: 3px;
-  }
-  
-  .post a {
-    width: 66px;
-    height: 66px;
-    display: inline-block;
-    background-image: url(../img/header/postbutton.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .post a:hover {
-    background-image: url(../img/header/hover_post.png);
-  }
-  .post a:active {
-    background-position-y: 3px;
-  }
-  
-  .notice a {
-    width: 66px;
-    height: 66px;
-    display: inline-block;
-    background-image: url(../img/header/noticebutton.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .notice a:hover {
-    background-image: url(../img/header/hover_notice.png);
-  }
-  .notice a:active {
-    background-position-y: 3px;
-  }
-  
-  .phone-buger {
-    display: none;
-  }
-  
-  @media (max-width: 576px) {
-    .nav-right {
-      display: none;
-    }
-    .logo a {
-      width: 73px;
-      height: 37px;
-      background-image: url(../img/phone/logo.png);
-      margin-right: 28px;
-      margin-left: 238px;
-      background-size: contain;
-    }
-    .logo a:hover {
-      background-image: url(../img/phone/logo.png);
-      background-repeat: no-repeat;
-      width: 73px;
-      height: 37px;
-    }
-  
-    .logo a:active {
-      background-position-y: 3px;
-    }
-  
-    .serch a {
-      width: 45px;
-      height: 45px;
-      display: inline-block;
-      background-image: url(../img/phone/serch.png);
-      background-repeat: no-repeat;
-      position: absolute;
-      top: 0px;
-      left: -30px;
-    }
-    .serch .click {
-      height: 45px;
-      left: -310px;
-    }
-    .click::before {
-      position: absolute;
-      top: 10px;
-      bottom: 10px;
-      left: -10px;
-      right: -10px;
-    }
-  
-    .click::after {
-      position: absolute;
-      top: 6px;
-      bottom: 6px;
-      left: -6px;
-      right: -6px;
-    }
-    .click:hover {
-      width: 0px;
-    }
-    .click:hover {
-      width: 140px;
-      transition: 1s;
-    }
-    input {
-      font-size: 18px;
-      position: absolute;
-      top: 13px;
-      left: 5px;
-      width: 70%;
-    }
-  
-    .phone-buger {
-      display: block;
-    }
-    .line {
-      width: 24px;
-      height: 24px;
-      background-image: url(../img/phone/buger.png);
-      background-repeat: no-repeat;
-      cursor: pointer;
-      display: block;
-      padding: 16px;
-      position: absolute;
-      right: 13px;
-      top: 12px;
-      z-index: 2;
-    }
-    .line:active {
-      background-position-y: 3px;
-    }
-    .line .menu,
-    .line .menu::before,
-    .line .menu::after {
-      background: #fff;
-      content: "";
-      display: block;
-      height: 2.5px;
-      position: absolute;
-      transition: ease 0.3s, top ease 0.3s 0.3s, transform ease 0.3s;
-      width: 17px;
-    }
-    .line .menu {
-      left: 15px;
-      top: 23px;
-    }
-  
-    .line .menu::before {
-      top: -6px;
-    }
-  
-    .line .menu::after {
-      top: 6px;
-    }
-  
-    #menu:checked + .line .menu {
-      background: transparent;
-    }
-  
-    #menu:checked + .line .menu::before {
-      transform: rotate(45deg);
-    }
-  
-    #menu:checked + .line .menu::after {
-      transform: rotate(-45deg);
-    }
-  
-    #menu:checked + .line .menu::before,
-    #menu:checked + .line .menu::after {
-      top: 0;
-      transition: top ease 0.3s, transform ease 0.3s 0.3s;
-    }
-  
-    #menu:checked ~ .menu-list {
-      width: 576px;
-      right: 0px;
-    }
-  
-    .menu-list {
-      width: 0px;
-      height: 100vh;
-      background: #4b4b4b;
-      padding-top: 60px;
-      position: fixed;
-      z-index: 1;
-      right: 0;
-      top: 68px;
-      transition: all 0.6s;
-    }
-    .menu-list ul {
-      list-style: none;
-      margin-left: 70px;
-      padding: 0;
-    }
-    .menu-list img {
-      margin-right: 10px;
-    }
-    .menu-list img li {
-      vertical-align: middle;
-      display: inline-block;
-      width: 40px;
-    }
-    .menu-list li {
-      margin-bottom: 20px;
-    }
-    .menu-list li a {
-      font-family: "GenYoGothic TW";
-      font-style: normal;
-      font-weight: 800;
-      font-size: 20px;
-      line-height: 24px;
-      letter-spacing: 0.2em;
-      text-decoration: none;
-      color: #e8e8e8;
-    }
-    .menu-list ul > li {
-      display: block;
-      width: 576px;
-    }
-  
-    input#menu {
-      display: none;
-    }
+    top: 10px;
+    bottom: 10px;
+    left: -10px;
+    right: -10px;
   }
 
-  /* 背景 */
-.container {
-    position: relative;
-    margin: 180px auto;
-    width: 68%;
-    
+  .click::after {
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: -6px;
+    right: -6px;
   }
-  /*右邊*/
-.right-group{
+  .click:hover {
+    width: 0px;
+  }
+  .click:hover {
+    width: 140px;
+    transition: 1s;
+  }
+  input {
+    font-size: 18px;
+    position: absolute;
+    top: 13px;
+    left: 5px;
+    width: 70%;
+  }
+
+  .phone-buger {
+    display: block;
+  }
+  .line {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/phone/buger.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    padding: 16px;
+    position: absolute;
+    right: 13px;
+    top: 12px;
+    z-index: 2;
+  }
+  .line:active {
+    background-position-y: 3px;
+  }
+  .line .menu,
+  .line .menu::before,
+  .line .menu::after {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 2.5px;
+    position: absolute;
+    transition: ease 0.3s, top ease 0.3s 0.3s, transform ease 0.3s;
+    width: 17px;
+  }
+  .line .menu {
+    left: 15px;
+    top: 23px;
+  }
+
+  .line .menu::before {
+    top: -6px;
+  }
+
+  .line .menu::after {
+    top: 6px;
+  }
+
+  #menu:checked + .line .menu {
+    background: transparent;
+  }
+
+  #menu:checked + .line .menu::before {
+    transform: rotate(45deg);
+  }
+
+  #menu:checked + .line .menu::after {
+    transform: rotate(-45deg);
+  }
+
+  #menu:checked + .line .menu::before,
+  #menu:checked + .line .menu::after {
+    top: 0;
+    transition: top ease 0.3s, transform ease 0.3s 0.3s;
+  }
+
+  #menu:checked ~ .menu-list {
+    width: 576px;
+    right: 0px;
+  }
+
+  .menu-list {
+    width: 0px;
+    height: 100vh;
+    background: #4b4b4b;
+    padding-top: 60px;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 68px;
+    transition: all 0.6s;
+  }
+  .menu-list ul {
+    list-style: none;
+    margin-left: 70px;
+    padding: 0;
+  }
+  .menu-list img {
+    margin-right: 10px;
+  }
+  .menu-list img li {
+    vertical-align: middle;
+    display: inline-block;
+    width: 40px;
+  }
+  .menu-list li {
+    margin-bottom: 20px;
+  }
+  .menu-list li a {
+    font-family: "GenYoGothic TW";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    color: #e8e8e8;
+  }
+  .menu-list ul > li {
+    display: block;
+    width: 576px;
+  }
+
+  input#menu {
+    display: none;
+  }
+}
+
+/* 背景 */
+.container {
+  position: relative;
+  margin: 180px auto;
+  width: 68%;
+}
+/*右邊*/
+.right-group {
   display: inline-block;
   position: absolute;
   width: 70%;
-  margin-left: 5%;  
+  margin-left: 5%;
 }
 
-.post-right-1{
+.post-right-1 {
   background-color: #292929;
   position: relative;
   display: inline-block;
@@ -361,9 +365,9 @@ body {
   padding: 8px 0%;
   margin-bottom: 50px;
   color: #ffffff;
-  z-index: 2; 
+  z-index: 2;
 }
-.post-right-2{
+.post-right-2 {
   background-color: #292929;
   position: relative;
   display: inline-block;
@@ -371,39 +375,39 @@ body {
   padding: 8px 0%;
   margin-bottom: 50px;
   color: #ffffff;
-  z-index: 2; 
+  z-index: 2;
 }
 /*個人檔案*/
-.exp{
+.exp {
   height: 90px;
   position: relative;
   margin: 10px 0%;
 }
-.exp p{
+.exp p {
   display: inline-block;
   position: absolute;
-  top:calc(50% - 15px);
+  top: calc(50% - 15px);
   margin-right: 5%;
   font-size: 30px;
   color: #0079ff;
   font-weight: bold;
 }
-.exp img{
+.exp img {
   width: 80%;
   position: absolute;
   left: 11%;
 }
-.information p{
+.information p {
   margin-bottom: 15px;
   font-weight: bold;
 }
-.black-pixel{
+.black-pixel {
   background-color: #181818;
   font-size: 25px;
   padding: 10px 4%;
 }
 /*換頭貼*/
-.hd-board{
+.hd-board {
   background-image: url(../img/head_board.png);
   display: inline-block;
   position: absolute;
@@ -414,11 +418,11 @@ body {
   z-index: 5;
   display: none;
 }
-.hd-board p{
+.hd-board p {
   font-size: 30px;
   margin: 20px 0 0 30px;
 }
-.hd-board div{
+.hd-board div {
   position: relative;
   display: inline-block;
   background-color: #999999;
@@ -428,543 +432,769 @@ body {
   height: 115px;
   z-index: 6;
 }
-.hd-board div::before{
+.hd-board div::before {
   content: "";
   position: absolute;
   background-color: #999999;
-  top: 5px; bottom: 5px; left: -4px; right: -4px;
+  top: 5px;
+  bottom: 5px;
+  left: -4px;
+  right: -4px;
   z-index: -3;
 }
-.hd-board div::after{
+.hd-board div::after {
   content: "";
   position: absolute;
   background-color: #999999;
-  top: 11px; bottom: 11px; left: -8px; right: -8px;
+  top: 11px;
+  bottom: 11px;
+  left: -8px;
+  right: -8px;
   z-index: -3;
 }
 /*svg*/
-.hd-board .headd{
+.hd-board .headd {
   position: absolute;
   top: 10px;
-  left: calc( 50% - 47px);
+  left: calc(50% - 47px);
   width: 100%;
   z-index: 15;
 }
-.hd-board .headd:active, .maxhead:active{
+.hd-board .headd:active,
+.maxhead:active {
   top: 3px;
 }
-.hd-board .bodyy{
+.hd-board .bodyy {
   width: 39%;
   position: absolute;
   top: 92px;
-  left: calc( 50% - 18px);
+  left: calc(50% - 18px);
 }
 /*cool man*/
-.maxhead{
+.maxhead {
   position: absolute;
   top: 12px;
-  left: calc( 50% - 47px);
+  left: calc(50% - 47px);
   width: 100%;
   z-index: 15;
 }
-.maxbody{
+.maxbody {
   width: 39%;
   position: absolute;
   top: 88px;
-  left: calc( 50% - 18px);
+  left: calc(50% - 18px);
 }
 /*改色-cls1=膚,cls2=髮,cls3=角*/
-.stick-3 .cls-1, .stick-4 .cls-1{fill: #A2F9A8;}  .stick-3 .cls-2, .stick-4 .cls-2{fill: #5252FF;}
-.stick-5 .cls-1, .stick-6 .cls-1{fill: #FC88D8;}  .stick-5 .cls-2, .stick-6 .cls-2{fill: #A2F9A8;}
-.stick-8 a{position: absolute;left: calc(50% - 20px);top: calc(50% - 20px);}
-.hd-board.hd-display{
+.stick-3 .cls-1,
+.stick-4 .cls-1 {
+  fill: #a2f9a8;
+}
+.stick-3 .cls-2,
+.stick-4 .cls-2 {
+  fill: #5252ff;
+}
+.stick-5 .cls-1,
+.stick-6 .cls-1 {
+  fill: #fc88d8;
+}
+.stick-5 .cls-2,
+.stick-6 .cls-2 {
+  fill: #a2f9a8;
+}
+.stick-8 a {
+  position: absolute;
+  left: calc(50% - 20px);
+  top: calc(50% - 20px);
+}
+.hd-board.hd-display {
   display: block;
 }
 
 /*勳章*/
-.medal{
+.medal {
   text-align: center;
   color: rgb(255, 255, 255);
   font-weight: bold;
-
 }
-.medal p{
+.medal p {
   display: inline-block;
   font-size: 28px;
   top: 20px;
   position: relative;
   z-index: 3;
-  
 }
 /*top*/
-.medal .top div{
+.medal .top div {
   display: inline-block;
   position: relative;
-  background-color: #4B4B4B;
-  color: #56FF84;
+  background-color: #4b4b4b;
+  color: #56ff84;
   width: 30%;
   height: 70px;
   margin: 30px 5%;
 }
 .medal .top div::before {
-  content: "";     display: block;position: absolute; top: 8px; bottom: 8px; left: -8px; right: -8px; background: #4B4B4B;     z-index: 1;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: -8px;
+  right: -8px;
+  background: #4b4b4b;
+  z-index: 1;
 }
-.medal .top p:hover{}
+.medal .top p:hover {
+}
 
 /*mid*/
-.medal .mid div{
+.medal .mid div {
   display: inline-block;
   position: relative;
-  background-color: #4B4B4B;
-  color: #47DEFF;
+  background-color: #4b4b4b;
+  color: #47deff;
   width: 30%;
   height: 70px;
   margin: 30px 5%;
 }
 .medal .mid div::before {
-  content: "";     display: block;position: absolute; top: 8px; bottom: 8px; left: -8px; right: -8px; background: #4B4B4B;     z-index: 1;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: -8px;
+  right: -8px;
+  background: #4b4b4b;
+  z-index: 1;
 }
 
 /*bottom*/
-.medal .bottom div{
+.medal .bottom div {
   display: inline-block;
   position: relative;
-  background-color: #4B4B4B;
-  color: #FB29FF;
+  background-color: #4b4b4b;
+  color: #fb29ff;
   width: 30%;
   height: 70px;
   margin: 30px 5%;
 }
 .medal .bottom div::before {
-  content: "";     display: block;position: absolute; top: 8px; bottom: 8px; left: -8px; right: -8px; background: #4B4B4B;     z-index: 1;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: -8px;
+  right: -8px;
+  background: #4b4b4b;
+  z-index: 1;
 }
 
-.post-right-1::before {/*pixel border*/   
-  content: "";     display: block;     position: absolute;     top: 16px;     bottom: 16px;     left: -16px;     right: -16px;     background: #292929;     z-index: -10;   }      .post-right-1::after {     content: "";     display: block;     position: absolute;     top: 8px;     bottom: 8px;     left: -8px;     right: -8px;     background: #292929;     z-index: -10;   }
-.post-right-2::before {/*pixel border*/   
-    content: "";     display: block;     position: absolute;     top: 16px;     bottom: 16px;     left: -16px;     right: -16px;     background: #292929;     z-index: -10;   }      .post-right-2::after {     content: "";     display: block;     position: absolute;     top: 8px;     bottom: 8px;     left: -8px;     right: -8px;     background: #292929;     z-index: -10;   }
-  
-  /*右邊hover*/
-.medal .top .l:hover{background-color: #56FF84;color: #ffffff;}.medal .top .l:hover::before{background-color: #56FF84;}
-.medal .top .r:hover{background-color: #56FF84;color: #ffffff;}.medal .top .r:hover::before{background-color: #56FF84;}
-.medal .mid .l:hover{background-color: #47DEFF;color: #ffffff;}.medal .mid .l:hover::before{background-color: #47DEFF;}
-.medal .mid .r:hover{background-color: #47DEFF;color: #ffffff;}.medal .mid .r:hover::before{background-color: #47DEFF;}
-.medal .bottom .l:hover{background-color: #FB29FF;color: #ffffff;}.medal .bottom .l:hover::before{background-color: #FB29FF;}
-.medal .bottom .r:hover{background-color: #FB29FF;color: #ffffff;}.medal .bottom .r:hover::before{background-color: #FB29FF;}
-  /*右邊active*/
-  .medal .top .l:active,.medal .top .r:active,.medal .mid .l:active,.medal .mid .r:active,.medal .bottom .l:active,.medal .bottom .r:active{
-    filter: brightness(70%);
-  }
+.post-right-1::before {
+  /*pixel border*/
+  content: "";
+  display: block;
+  position: absolute;
+  top: 16px;
+  bottom: 16px;
+  left: -16px;
+  right: -16px;
+  background: #292929;
+  z-index: -10;
+}
+.post-right-1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: -8px;
+  right: -8px;
+  background: #292929;
+  z-index: -10;
+}
+.post-right-2::before {
+  /*pixel border*/
+  content: "";
+  display: block;
+  position: absolute;
+  top: 16px;
+  bottom: 16px;
+  left: -16px;
+  right: -16px;
+  background: #292929;
+  z-index: -10;
+}
+.post-right-2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: -8px;
+  right: -8px;
+  background: #292929;
+  z-index: -10;
+}
 
+/*右邊hover*/
+.medal .top .l:hover {
+  background-color: #56ff84;
+  color: #ffffff;
+}
+.medal .top .l:hover::before {
+  background-color: #56ff84;
+}
+.medal .top .r:hover {
+  background-color: #56ff84;
+  color: #ffffff;
+}
+.medal .top .r:hover::before {
+  background-color: #56ff84;
+}
+.medal .mid .l:hover {
+  background-color: #47deff;
+  color: #ffffff;
+}
+.medal .mid .l:hover::before {
+  background-color: #47deff;
+}
+.medal .mid .r:hover {
+  background-color: #47deff;
+  color: #ffffff;
+}
+.medal .mid .r:hover::before {
+  background-color: #47deff;
+}
+.medal .bottom .l:hover {
+  background-color: #fb29ff;
+  color: #ffffff;
+}
+.medal .bottom .l:hover::before {
+  background-color: #fb29ff;
+}
+.medal .bottom .r:hover {
+  background-color: #fb29ff;
+  color: #ffffff;
+}
+.medal .bottom .r:hover::before {
+  background-color: #fb29ff;
+}
+/*右邊active*/
+.medal .top .l:active,
+.medal .top .r:active,
+.medal .mid .l:active,
+.medal .mid .r:active,
+.medal .bottom .l:active,
+.medal .bottom .r:active {
+  filter: brightness(70%);
+}
 
-  /*左邊*/
-  .post-left{
-    position: relative;
-    display: inline-block;
-    color: rgb(255, 255, 255);
-    width: 30%;
-    padding-left: 5%;
+/*左邊*/
+.post-left {
+  position: relative;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  width: 30%;
+  padding-left: 5%;
+}
+.hd,
+.hd-board div {
+  cursor: pointer;
+  display: inline-block;
+}
+.hd {
+  position: relative;
+  background-image: url(../img/stick/frame.png);
+  background-size: contain;
+  width: 317px;
+  height: 357px;
+}
+.hd-stick {
+  position: absolute;
+  display: inline-block;
+  left: calc(50% - 115px);
+  bottom: 15px;
+}
+h1 {
+  font-size: 40px;
+  margin-top: 10%;
+  font-weight: 900;
+}
+h2 {
+  font-size: 32px;
+  margin: 5% 0%;
+  font-weight: 700;
+}
+h3 {
+  padding: 16px 2%;
+  font-size: 30px;
+  font-weight: 700;
+}
+.left-tag {
+  margin: 5% 0%;
+}
+.left-tag img {
+  display: inline-block;
+  margin-bottom: 5%;
+}
+.tag1:hover {
+  content: url(../img/b5/article_hover.png);
+}
+.tag2:hover {
+  content: url(../img/b5/history_hover.png);
+}
+.tag3:hover {
+  content: url(../img/b5/collect_hover.png);
+}
+.tag4:hover {
+  content: url(../img/b5/setting_hover.png);
+}
+.tag5:hover {
+  content: url(../img/b5/help_hover.png);
+}
+
+.tag1:active {
+  content: url(../img/b5/article_hover.png);
+  filter: brightness(50%);
+}
+.tag2:active {
+  content: url(../img/b5/history_hover.png);
+  filter: brightness(50%);
+}
+.tag3:active {
+  content: url(../img/b5/collect_hover.png);
+  filter: brightness(50%);
+}
+.tag4:active {
+  content: url(../img/b5/setting_hover.png);
+  filter: brightness(50%);
+}
+.tag5:active {
+  content: url(../img/b5/help_hover.png);
+  filter: brightness(50%);
+}
+.tag1:active,
+.tag2:active,
+.tag3:active,
+.tag4:active,
+.tag5:active {
+  margin-left: 20px;
+}
+.tag-5 {
+  display: none;
+}
+
+/*動畫*/
+.stick-1:hover .headd {
+  animation-name: head;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-2:hover .headd {
+  animation-name: head;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-3:hover .headd {
+  animation-name: head;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-4:hover .headd {
+  animation-name: head;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-5:hover .headd {
+  animation-name: head;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-6:hover .headd {
+  animation-name: head;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-7:hover .maxhead {
+  animation-name: head;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+@keyframes head {
+  0% {
+    margin-left: 0;
   }
-  .hd,.hd-board div{
-    cursor: pointer;
-    display: inline-block;
+  25% {
+    margin-left: 5px;
   }
-  .hd{
-    position: relative;
-    background-image: url(../img/stick/frame.png);
-    background-size: contain;
-    width: 317px;
-    height: 357px;
+  50% {
+    margin-left: 0;
   }
-  .hd-stick{position: absolute;display: inline-block;left: calc(50% - 115px);bottom: 15px;}
-  h1{
-    font-size: 40px;
-    margin-top: 10%;
+  75% {
+    margin-left: 5px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+.stick-1:hover .bodyy {
+  animation-name: body;
+}
+.stick-2:hover .bodyy {
+  animation-name: body;
+}
+.stick-3:hover .bodyy {
+  animation-name: body;
+}
+.stick-4:hover .bodyy {
+  animation-name: body;
+}
+.stick-5:hover .bodyy {
+  animation-name: body;
+}
+.stick-6:hover .bodyy {
+  animation-name: body;
+}
+.stick-6:hover .maxbody {
+  animation-name: body;
+}
+
+@keyframes cls1 {
+  25% {
+    fill: #3eed85;
+  }
+  50% {
+    fill: #fff;
+  }
+  75% {
+    fill: #ff50c1;
+  }
+  100% {
+    fill: #fff;
+  }
+}
+.stick-1:hover.cls-2 {
+  animation: cls2;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-2:hover.cls-2 {
+  animation: cls2;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-3:hover.cls-2 {
+  animation: cls2;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-4:hover.cls-2 {
+  animation: cls2;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-5:hover.cls-2 {
+  animation: cls2;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-6:hover.cls-2 {
+  animation: cls2;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-7:hover.cls-2 {
+  animation: cls2;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+@keyframes cls2 {
+  25% {
+    fill: #fff;
+  }
+  50% {
+    fill: #ff50c1;
+  }
+  75% {
+    fill: #3eed85;
+  }
+  100% {
+    fill: #ff50c1;
+  }
+}
+.stick-1:hover .cls-3 {
+  animation: cls3;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-2:hover .cls-3 {
+  animation: cls3;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-3:hover .cls-3 {
+  animation: cls3;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-4:hover .cls-3 {
+  animation: cls3;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-5:hover .cls-3 {
+  animation: cls3;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-6:hover .cls-3 {
+  animation: cls3;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.stick-7:hover .cls-3 {
+  animation: cls3;
+  animation-duration: 1.5s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+@keyframes cls3 {
+  25% {
+    fill: #ff50c1;
+  }
+  50% {
+    fill: #3eed85;
+  }
+  75% {
+    fill: #fff;
+  }
+  100% {
+    fill: #3eed85;
+  }
+}
+
+/*footer*/
+.nyancat {
+  width: 100%;
+  background-image: url(../img/nyancat.gif);
+  margin-top: -430px;
+  margin-left: -30px;
+  height: 590px;
+  background-size: 99% auto;
+  background-repeat: no-repeat;
+}
+/*手機板*/
+@media (max-width: 800px) {
+  /*nav*/
+  .menu-list li a:active {
+    color: #0579e3;
+  }
+  .menu-list::-webkit-input-placeholder {
+    font-family: monospace;
     font-weight: 900;
   }
-  h2{
-    font-size: 32px;
-    margin: 5% 0%;
-    font-weight: 700;
-  }
-  h3{
-    padding: 16px 2%;
-    font-size: 30px;
-    font-weight: 700;
-  }
-  .left-tag{
-    margin: 5% 0%;
-  }
-  .left-tag img{
-    display: inline-block;
-    margin-bottom: 5%;
-  }
-  .tag1:hover{content: url(../img/b5/article_hover.png);}
-  .tag2:hover{content: url(../img/b5/history_hover.png);}
-  .tag3:hover{content: url(../img/b5/collect_hover.png);}
-  .tag4:hover{content: url(../img/b5/setting_hover.png);}
-  .tag5:hover{content: url(../img/b5/help_hover.png);}
 
-  .tag1:active{content: url(../img/b5/article_hover.png);filter: brightness(50%);}
-  .tag2:active{content: url(../img/b5/history_hover.png);filter: brightness(50%);}
-  .tag3:active{content: url(../img/b5/collect_hover.png);filter: brightness(50%);}
-  .tag4:active{content: url(../img/b5/setting_hover.png);filter: brightness(50%);}
-  .tag5:active{content: url(../img/b5/help_hover.png);filter: brightness(50%);}
-  .tag1:active,.tag2:active,.tag3:active,.tag4:active,.tag5:active{margin-left: 20px;}
-  .tag-5{
+  .container {
+    margin: 75px auto;
+    width: 80%;
+    height: 1490px;
+  }
+  .post-left {
+    width: 100%;
+    display: block;
+    padding-left: 0;
+  }
+
+  .hd {
+    width: 197px;
+    height: 223px;
+  }
+  .hd-board {
+    background-image: url(../img/head_board_p.png);
+    top: 220px;
+    width: 457px;
+    height: 270px;
+  }
+  .hd-board div {
+    margin: 20px 0% 0px 7%;
+    width: 70px;
+    height: 70px;
+  }
+  .hd-board .headd {
+    top: 5px;
+    left: calc(50% - 28px);
+    width: 80%;
+  }
+  .hd-board .bodyy {
+    width: 39%;
+    top: 53px;
+    left: calc(50% - 13px);
+  }
+  .maxhead {
+    top: 4px;
+    left: calc(50% - 30px);
+    width: 85%;
+  }
+  .maxbody {
+    width: 39%;
+    top: 50px;
+    left: calc(50% - 14px);
+  }
+  .hd-stick {
+    width: 75%;
+    left: calc(50% - 75px);
+    bottom: 10px;
+  }
+  h1 {
+    position: absolute;
+    top: 3px;
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 25px;
+  }
+  h2 {
+    position: absolute;
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 25px;
+    top: 80px;
+  }
+  .left-tag {
     display: none;
   }
-
-
-  /*動畫*/
-  .stick-1:hover .headd {
-    animation-name: head;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
+  .tag-5 {
+    display: block;
+    margin: 15px 0;
   }
-  .stick-2:hover .headd {
-    animation-name: head;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
+  .tag1:active {
+    content: url(../img/b5p/article_hover.png);
   }
-  .stick-3:hover .headd {
-    animation-name: head;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
+  .tag2:active {
+    content: url(../img/b5p/history_hover.png);
   }
-  .stick-4:hover .headd {
-    animation-name: head;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
+  .tag3:active {
+    content: url(../img/b5p/collect_hover.png);
   }
-  .stick-5:hover .headd {
-    animation-name: head;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
+  .tag4:active {
+    content: url(../img/b5p/setting_hover.png);
   }
-  .stick-6:hover .headd {
-    animation-name: head;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-  }
-  .stick-7:hover .maxhead {
-    animation-name: head;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-  }
-  @keyframes head {
-    0% {
-      margin-left: 0;
-    }
-    25% {
-      margin-left: 5px;
-    }
-    50% {
-      margin-left: 0;
-    }
-    75% {
-      margin-left: 5px;
-    }
-    100% {
-      margin-left: 0px;
-    }
+  .tag5:active {
+    content: url(../img/b5p/help_hover.png);
   }
 
-  .stick-1:hover .bodyy {animation-name: body;}
-  .stick-2:hover .bodyy {animation-name: body;}
-  .stick-3:hover .bodyy {animation-name: body;}
-  .stick-4:hover .bodyy {animation-name: body;}
-  .stick-5:hover .bodyy {animation-name: body;}
-  .stick-6:hover .bodyy {animation-name: body;}
-  .stick-6:hover .maxbody {animation-name: body;}
-
-  @keyframes cls1 {
-    25% {
-      fill: #3eed85;
-    }
-    50% {
-      fill: #fff;
-    }
-    75% {
-      fill: #ff50c1;
-    }
-    100% {
-      fill: #fff;
-    }
+  /*right*/
+  .right-group {
+    margin-left: 0;
+    width: 100%;
   }
-  .stick-1:hover.cls-2 {
-    animation: cls2;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
+  .exp {
+    height: 55px;
   }
-  .stick-2:hover.cls-2 {
-    animation: cls2;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
+  .exp p {
+    top: calc(50% - 10px);
   }
-  .stick-3:hover.cls-2 {
-    animation: cls2;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-  }
-  .stick-4:hover.cls-2 {
-    animation: cls2;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-  }
-  .stick-5:hover.cls-2 {
-    animation: cls2;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-  }
-  .stick-6:hover.cls-2 {
-    animation: cls2;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-  }
-  .stick-7:hover.cls-2 {
-    animation: cls2;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-  }
-  @keyframes cls2 {
-    25% {
-      fill: #fff;
-    }
-    50% {
-      fill: #ff50c1;
-    }
-    75% {
-      fill: #3eed85;
-    }
-    100% {
-      fill: #ff50c1;
-    }
-  }
-  .stick-1:hover .cls-3 {
-    animation: cls3;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-  }
-  .stick-2:hover .cls-3 {
-    animation: cls3;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-  }
-  .stick-3:hover .cls-3 {
-    animation: cls3;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-  }
-  .stick-4:hover .cls-3 {
-    animation: cls3;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-  }
-  .stick-5:hover .cls-3 {
-    animation: cls3;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-  }
-  .stick-6:hover .cls-3 {
-    animation: cls3;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-  }
-  .stick-7:hover .cls-3 {
-    animation: cls3;
-    animation-duration: 1.5s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-  }
-  @keyframes cls3 {
-    25% {
-      fill: #ff50c1;
-    }
-    50% {
-      fill: #3eed85;
-    }
-    75% {
-      fill: #fff;
-    }
-    100% {
-      fill: #3eed85;
-    }
+  .exp img {
+    top: calc(50% - 20px);
+    left: 20%;
   }
 
+  .black-pixel {
+    padding: 10px 2%;
+  }
+
+  /*tag-b5p*/
+  .tag1:hover {
+    content: url(../img/b5p/article_hover.png);
+  }
+  .tag2:hover {
+    content: url(../img/b5p/history_hover.png);
+  }
+  .tag3:hover {
+    content: url(../img/b5p/collect_hover.png);
+  }
+  .tag4:hover {
+    content: url(../img/b5p/setting_hover.png);
+  }
+  .tag5:hover {
+    content: url(../img/b5p/help_hover.png);
+  }
+
+  /*勳章*/
+  .medal .top div,
+  .medal .mid div,
+  .medal .bottom div {
+    width: 40%;
+    height: 40px;
+    margin: 30px 4%;
+  }
+  .medal .top div::before,
+  .medal .mid div::before,
+  .medal .bottom div::before {
+    top: 5px;
+    bottom: 5px;
+    left: -5px;
+    right: -5px;
+  }
+  .medal p {
+    font-size: 18px;
+    top: 5px;
+  }
+
+  .nav {
+    width: 123%;
+  }
 
   /*footer*/
   .nyancat {
     width: 100%;
     background-image: url(../img/nyancat.gif);
-    margin-top: -430px;
-    margin-left: -30px;
-    height: 590px;
-    background-size: 99% auto;
+    margin-top: -180px;
+    height: 170px;
+    background-size: 100% auto;
     background-repeat: no-repeat;
   }
-  /*手機板*/
-  @media (max-width:800px) {
-    /*nav*/
-    .menu-list li a:active {
-      color: #0579e3;
-    }
-    .menu-list::-webkit-input-placeholder{font-family: monospace;font-weight: 900;}
-
-    .container {
-      margin: 75px auto;
-      width: 80%;
-      height: 1490px;
-    }
-    .post-left{
-      width: 100%;
-      display: block;
-      padding-left: 0;
-    }
-
-    .hd{
-      width: 197px;
-      height: 223px;
-    }
-    .hd-board{
-      background-image: url(../img/head_board_p.png);
-      top: 220px;
-      width: 457px; height: 270px;
-    }
-    .hd-board div{
-      margin: 20px 0% 0px 7%;
-      width: 70px;
-      height: 70px;
-    }
-    .hd-board .headd{
-      top: 5px;
-      left: calc( 50% - 28px);
-      width: 80%;
-    }
-    .hd-board .bodyy{
-      width: 39%;
-      top: 53px;
-      left: calc( 50% - 13px);
-    }
-    .maxhead{
-      top: 4px;
-      left: calc( 50% - 30px);
-      width: 85%;
-    }
-    .maxbody{
-      width: 39%;
-      top: 50px;
-      left: calc( 50% - 14px);
-    }
-    .hd-stick{
-      width: 75%;
-      left: calc(50% - 75px);
-      bottom: 10px;
-    }
-    h1{
-      position: absolute;
-      top: 3px;
-      display: inline-block;
-      margin-left: 25px;
-      font-size: 25px;
-      
-    }
-    h2{
-      position: absolute;
-      display: inline-block;
-      font-size: 25px;
-      margin-left: 25px;
-      top: 80px;
-    }
-    .left-tag{display: none;}
-    .tag-5{
-      display: block;
-      margin: 15px 0;
-    }
-    .tag1:active{content: url(../img/b5p/article_hover.png);}
-    .tag2:active{content: url(../img/b5p/history_hover.png);}
-    .tag3:active{content: url(../img/b5p/collect_hover.png);}
-    .tag4:active{content: url(../img/b5p/setting_hover.png);}
-    .tag5:active{content: url(../img/b5p/help_hover.png);}
-
-    /*right*/
-    .right-group{margin-left: 0;width: 100%;}
-    .exp{height: 55px;}
-    .exp p{top: calc(50% - 10px);}
-    .exp img{top: calc(50% - 20px);left: 20%;}
-
-    .black-pixel{padding: 10px 2%;}
-
-    /*tag-b5p*/
-    .tag1:hover{content: url(../img/b5p/article_hover.png);}
-    .tag2:hover{content: url(../img/b5p/history_hover.png);}
-    .tag3:hover{content: url(../img/b5p/collect_hover.png);}
-    .tag4:hover{content: url(../img/b5p/setting_hover.png);}
-    .tag5:hover{content: url(../img/b5p/help_hover.png);}
-
-    /*勳章*/
-    .medal .top div,.medal .mid div,.medal .bottom div{
-      width: 40%;
-      height: 40px;
-      margin: 30px 4%;
-    }
-    .medal .top div::before,.medal .mid div::before,.medal .bottom div::before{
-      top: 5px;
-      bottom: 5px;
-      left: -5px;
-      right: -5px;
-    }
-    .medal p{font-size: 18px;top: 5px;}
-
-    /*footer*/
-    .nyancat {
-      width: 100%;
-      background-image: url(../img/nyancat.gif);
-      margin-top: -180px;
-      height: 170px;
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-    }
-  }
-  
+}
